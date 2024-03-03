@@ -1,0 +1,25 @@
+class principal
+{
+    public
+    void holiday()
+    {
+        System.out.print("Tomorrow is holiday\n");
+    }
+}
+class student extends principal
+{
+    public
+    void rest()
+    {
+        System.out.print("Taking rest\n");
+    }
+}
+public class SimpleInheritance
+{
+    public static void main(String[] args)
+    {
+        student obj = new student();
+        obj.holiday();
+        obj.rest();
+    }
+}
