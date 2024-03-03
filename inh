@@ -1,0 +1,110 @@
+#include<iostream>
+using namespace std;
+class A
+{
+     public:
+     void aClass()
+     {
+          cout<<"College Fest of college A\n";
+     }
+};
+class B
+{
+     public:
+     void bClass()
+     {
+          cout<<"Annual day of college B\n";
+     }
+};
+//Multiple Inheritance
+class C: public A,public B
+{
+     public:
+     void cClass()
+     {
+          cout<<"All students are invited\n";
+     }
+};
+//Simple Inheritance
+class D: public A
+{
+     public:
+     void dClass()
+     {
+          cout<<"Teachers of college A are conducting culturals\n";
+     }
+};
+
+//Hybrid Inheritance
+class E: public C,public D
+{
+     public:
+     void eClass()
+     {
+          cout<<"Teachers of college B are participating in programs conducting by college A\n";
+     }
+};
+//Multi-Level Inheritance
+class F: public D
+{
+     public:
+     void fClass()
+     {
+          cout<<"Prizes will be given to winners\n";
+     }
+};
+//Hierarchical Inheritance
+class G:public A
+{
+     public:
+     void gClass()
+     {
+          cout<<"Parents are also invited \n";
+     }
+};
+class H:public A
+{
+     public:
+     void hClass()
+     {
+          cout<<"Trespassers Will be prosecuted\n";
+     }
+};
+int main()
+{
+     //Simple Inheritance
+     cout<<"Simple Inheritance\n";
+     D obj;
+     obj.aClass();
+     obj.dClass();
+     //Multiple Inheritance
+     cout<<"\nMultiple Inheritance\n";
+     C obj1;
+     obj1.aClass();
+     obj1.bClass();
+     obj1.cClass();
+     //Multi-Level Inheritance
+     cout<<"\nMulti-Level Inheritance\n";
+     F obj2;
+     obj2.aClass();
+     obj2.dClass();
+     obj2.fClass();
+     //Hierarchical Inheritance
+     cout<<"\nHierarchical Inheritance\n";
+     G obj3;
+     H obj4;
+     obj3.aClass();
+     obj3.gClass();
+     obj4.aClass();
+     obj4.hClass();
+     //Hybrid Inheritance
+     cout<<"\nHybrid Inheritance\n";
+     E obj5;
+     //obj5.aClass();
+     //aClass() method becomes ambiguous here
+     obj5.bClass();
+     obj5.cClass();
+     obj5.dClass();
+     obj5.eClass();
+     return 0;
+}
