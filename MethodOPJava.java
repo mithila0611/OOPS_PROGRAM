@@ -1,0 +1,17 @@
+public class MethodOPJava{
+    public int add(int a,int b){
+        return a+b;
+    }
+    public int add(int a,int b,int c){
+        return a+b+c;
+    }
+    public int add(int a,int b,int c,int d){
+        return a+b+c+d;
+    }
+    public static void main(String[] args) {
+        MethodOPJava obj=new MethodOPJava();
+        System.out.println("Result1 : "+obj.add(2,3));
+        System.out.println("Result2 : "+obj.add(2,3,4));
+        System.out.println("Result3 : "+obj.add(2,3,4,5));
+    }
+}
