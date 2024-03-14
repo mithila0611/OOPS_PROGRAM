@@ -14,24 +14,7 @@ class MethodOLCPP{
 };
 int main()
 {
-    int choice;
-    int a,b,c,d;
-    MethodOLCPP sum;
-    cout<<"Enter your choice : ";
-    cin>>choice;
-    if(choice==2){
-        cout<<"Enter two numbers : "<<endl;
-        cin>>a>>b;
-        cout<<"Addition of two numbers is : "<<sum.add(a,b)<<endl;
-    }
-    if(choice==3){
-        cout<<"Enter three numbers : "<<endl;
-        cin>>a>>b>>c;
-        cout<<"Addition of three numbers is : "<<sum.add(a,b,c)<<endl;
-    }
-    if(choice==4){
-        cout<<"Enter four numbers : "<<endl;
-        cin>>a>>b>>c>>d;
-        cout<<"Addition of two numbers is : "<<sum.add(a,b,c,d)<<endl;
-    }
+     cout<<"Result : "<<sum.add(2,3)<<endl;
+    cout<<"Result : "<<sum.add(2,3,4)<<endl;
+    cout<<"Result : "<<sum.add(2,3,4,5)<<endl;
 }
