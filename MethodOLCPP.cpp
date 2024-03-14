@@ -14,7 +14,8 @@ class MethodOLCPP{
 };
 int main()
 {
-     cout<<"Result1 : "<<sum.add(2,3)<<endl;
+    MethodOLCPP sum;
+    cout<<"Result1 : "<<sum.add(2,3)<<endl;
     cout<<"Result2 : "<<sum.add(2,3,4)<<endl;
     cout<<"Result3 : "<<sum.add(2,3,4,5)<<endl;
 }
