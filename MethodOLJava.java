@@ -1,4 +1,4 @@
-public class MethodOPJava{
+public class MethodOLJava{
     public int add(int a,int b){
         return a+b;
     }
@@ -9,7 +9,7 @@ public class MethodOPJava{
         return a+b+c+d;
     }
     public static void main(String[] args) {
-        MethodOPJava obj=new MethodOPJava();
+        MethodOLJava obj=new MethodOPJava();
         System.out.println("Result1 : "+obj.add(2,3));
         System.out.println("Result2 : "+obj.add(2,3,4));
         System.out.println("Result3 : "+obj.add(2,3,4,5));
