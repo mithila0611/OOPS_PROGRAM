@@ -9,7 +9,7 @@ public class MethodOLJava{
         return a+b+c+d;
     }
     public static void main(String[] args) {
-        MethodOLJava obj=new MethodOPJava();
+        MethodOLJava obj=new MethodOLJava();
         System.out.println("Result1 : "+obj.add(2,3));
         System.out.println("Result2 : "+obj.add(2,3,4));
         System.out.println("Result3 : "+obj.add(2,3,4,5));
